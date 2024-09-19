@@ -1,0 +1,101 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    width: 100vw;
+    height: 100vh;
+    background: transparent; /* Make background transparent */
+    position: relative;
+}
+
+/* Ensures that the SVG background fills the viewport */
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Center header and input vertically and horizontally */
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.bottom-container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+}
+
+#submit-icon {
+    position : absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    border : none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: rgb(38 57 77) 0 20px 30px -10px;
+    box-sizing: border-box;
+}
+
+.images-section {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.image-container {
+    width: 40%;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
